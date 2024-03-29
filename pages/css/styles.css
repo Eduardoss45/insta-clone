@@ -1,0 +1,328 @@
+/* Geral */
+
+/* Define estilos gerais para todos os elementos na página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Faz com que o padding e a borda não afetem o tamanho total do elemento */
+  font-family: Helvetica; /* Define a fonte padrão para toda a página */
+}
+
+/* Define a cor de fundo do corpo da página */
+body {
+  background-color: #fafafa;
+}
+
+/* Containers */
+
+/* Estiliza o contêiner principal da página */
+#main-container {
+  border: 1px solid #dbdbdb; /* Adiciona uma borda ao contêiner */
+  display: flex; /* Faz com que os elementos dentro do contêiner sejam exibidos em linha */
+  flex-wrap: wrap; /* Permite que os elementos dentro do contêiner quebrem para a próxima linha se não couberem */
+  flex-direction: column; /* Define a direção dos elementos como coluna */
+  align-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+/* Estiliza o contêiner do banner e a imagem do banner */
+#banner-container {
+  text-align: right; /* Alinha o texto à direita */
+}
+
+#banner-container img {
+  width: 100%; /* Define a largura da imagem como 100% */
+  margin-right: 15px; /* Define a margem direita */
+  margin-top: 25px; /* Define a margem superior */
+  max-width: 380px; /* Define a largura máxima da imagem */
+}
+
+/* Estiliza o contêiner do formulário */
+#form-container {
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Login form */
+
+/* Estiliza o formulário de login */
+#form-box {
+  background-color: #fff; /* Define a cor de fundo do formulário como branco */
+  border: 1px solid #dbdbdb; /* Adiciona uma borda ao formulário */
+  width: 350px; /* Define a largura do formulário */
+  margin-top: 30px; /* Define a margem superior */
+}
+
+/* Estiliza as informações no formulário */
+#info {
+  margin: 1rem 2.5rem; /* Define a margem */
+}
+
+#info span {
+  font-size: 14px; /* Define o tamanho da fonte */
+  font-weight: 600; /* Define o peso da fonte */
+  color: #737373; /* Define a cor do texto */
+}
+
+/* Estiliza o botão de login com o Facebook */
+#login-facebook {
+  width: 100%; /* Define a largura do elemento como 100% */
+}
+
+#login-facebook button {
+  padding: 0.3rem 2rem; /* Define o preenchimento */
+  border-radius: 7px; /* Define o raio da borda */
+  border: none; /* Remove a borda */
+  background-color: #0095f6; /* Define a cor de fundo */
+  color: #fff; /* Define a cor do texto */
+}
+
+#login-facebook span {
+  font-size: 18px; /* Define o tamanho da fonte */
+  margin-right: 5px; /* Define a margem direita */
+}
+
+/* Estiliza o logo do Instagram */
+#logo-insta {
+  width: 175px; /* Define a largura */
+  height: 51px; /* Define a altura */
+  margin: 30px auto 12px; /* Define a margem */
+}
+
+/* Estiliza o formulário de login */
+#login-form {
+  margin-top: 20px; /* Define a margem superior */
+}
+
+#login-form input {
+  display: block; /* Faz com que os elementos de entrada sejam exibidos em bloco */
+  font-size: 12px; /* Define o tamanho da fonte */
+  padding: 12px 9px; /* Define o preenchimento */
+  background-color: #fafafa; /* Define a cor de fundo */
+  border: 1px solid #dbdbdb; /* Adiciona uma borda */
+  border-radius: 3px; /* Define o raio da borda */
+  width: 268px; /* Define a largura */
+  margin: 5px auto; /* Define a margem */
+}
+
+#login-form input[type="submit"] {
+  background-color: #0095f6; /* Define a cor de fundo */
+  color: #fff; /* Define a cor do texto */
+  margin-top: 15px; /* Define a margem superior */
+  border-radius: 5px; /* Define o raio da borda */
+  height: 30px; /* Define a altura */
+  font-size: 13px; /* Define o tamanho da fonte */
+  padding: 0; /* Remove o preenchimento */
+  font-weight: bold; /* Define o peso da fonte */
+  opacity: 0.7; /* Define a opacidade */
+}
+
+/* Estiliza as informações no registro */
+#info-register {
+  margin: 1rem 14%; /* Define a margem */
+}
+
+#info-register p span {
+  font-size: 12px; /* Define o tamanho da fonte */
+  color: #737373; /* Define a cor do texto */
+}
+
+#info-register a {
+  font-size: 12px; /* Define o tamanho da fonte */
+  text-decoration: none; /* Remove a decoração do texto */
+  color: #00376b; /* Define a cor do texto */
+}
+
+/* Separador */
+.separator {
+  position: relative; /* Define a posição como relativa */
+}
+
+.line {
+  border-top: 1px solid #dbdbdb; /* Adiciona uma borda superior */
+  width: 268px; /* Define a largura */
+  margin: 25px auto 35px; /* Define a margem */
+}
+
+.separator span {
+  position: absolute; /* Define a posição como absoluta */
+  text-transform: uppercase; /* Transforma o texto para maiúsculas */
+  color: #8e8e8e; /* Define a cor do texto */
+  background-color: #fff; /* Define a cor de fundo */
+  top: -6px; /* Define a posição superior */
+  width: 50px; /* Define a largura */
+  margin-left: -25px; /* Define a margem esquerda */
+  font-size: 14px; /* Define o tamanho da fonte */
+}
+
+/* Facebook login */
+#facebook-login {
+  margin-bottom: 25px; /* Define a margem inferior */
+}
+
+#facebook-login a {
+  text-decoration: none; /* Remove a decoração do texto */
+  color: #385185; /* Define a cor do texto */
+  display: flex; /* Faz com que os elementos sejam exibidos em linha */
+  align-items: center; /* Alinha os itens verticalmente */
+  justify-content: center; /* Alinha os itens horizontalmente */
+}
+
+#facebook-login img {
+  width: 16px; /* Define a largura */
+  height: 16px; /* Define a altura */
+  margin-right: 8px; /* Define a margem direita */
+}
+
+#facebook-login span {
+  font-weight: bold; /* Define o peso da fonte */
+  font-size: 13px; /* Define o tamanho da fonte */
+  margin-top: 1px; /* Define a margem superior */
+}
+
+/* Forgot password */
+#forgot-pass {
+  margin-bottom: 20px; /* Define a margem inferior */
+  font-size: 12px; /* Define o tamanho da fonte */
+}
+
+#forgot-pass a {
+  text-decoration: none; /* Remove a decoração do texto */
+  color: #373799; /* Define a cor do texto */
+}
+
+/* Register */
+#register-container {
+  background-color: #fff; /* Define a cor de fundo */
+  border: 1px solid #dbdbdb; /* Adiciona uma borda */
+  width: 350px; /* Define a largura */
+  margin-top: 10px; /* Define a margem superior */
+  padding: 25px; /* Define o preenchimento */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+#register-container p {
+  font-size: 14px; /* Define o tamanho da fonte */
+  color: #262626; /* Define a cor do texto */
+}
+
+#register-container a {
+  color: #4a95f6; /* Define a cor do texto */
+  font-weight: bold; /* Define o peso da fonte */
+  text-decoration: none; /* Remove a decoração do texto */
+}
+
+/* Get app */
+#get-app-container {
+  text-align: center; /* Alinha o texto ao centro */
+  width: 350px; /* Define a largura */
+}
+
+#get-app-container p {
+  margin: 20px 0; /* Define a margem */
+  font-size: 13px; /* Define o tamanho da fonte */
+}
+
+#get-app-container a {
+  text-decoration: none; /* Remove a decoração do texto */
+}
+
+#get-app-container img {
+  width: 136px; /* Define a largura */
+  height: 40px; /* Define a altura */
+}
+
+/* Footer */
+footer {
+  text-align: left; /* Alinha o texto à esquerda */
+  width: 1000px; /* Define a largura */
+  margin: 50px auto; /* Define a margem */
+  display: flex; /* Faz com que os elementos sejam exibidos em linha */
+  flex-direction: column; /* Define a direção dos elementos como coluna */
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+footer #footer-links {
+  display: flex; /* Faz com que os elementos sejam exibidos em linha */
+  list-style: none; /* Remove a marcação da lista */
+}
+
+#footer-links li {
+  margin-right: 10px; /* Define a margem direita */
+}
+
+#footer-links a,
+#copyright {
+  text-decoration: none; /* Remove a decoração do texto */
+  color: #8e8e8e; /* Define a cor do texto */
+  font-size: 12px; /* Define o tamanho da fonte */
+}
+
+#copyright {
+  margin-top: 10px; /* Define a margem superior */
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  /* Define estilos específicos para dispositivos móveis */
+
+  body {
+    background-color: #fff; /* Define a cor de fundo */
+  }
+
+  #banner-container {
+    display: none; /* Esconde o banner */
+  }
+
+  #main-container,
+  #form-box {
+    margin-top: 0; /* Define a margem superior */
+  }
+
+  #form-container,
+  #form-box,
+  #register-container,
+  #get-app-container {
+    width: 100%; /* Define a largura */
+    border: none; /* Remove a borda */
+  }
+
+  footer {
+    width: 90%; /* Define a largura */
+  }
+
+  #footer-links {
+    flex-wrap: wrap; /* Faz com que os elementos quebrem para a próxima linha */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  }
+
+  #footer-links {
+    margin-bottom: 10px; /* Define a margem inferior */
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  /* Define estilos específicos para tablets */
+
+  body {
+    background-color: #fff; /* Define a cor de fundo */
+  }
+
+  #main-container,
+  #form-box {
+    margin: 1%; /* Define a margem */
+  }
+
+  footer {
+    width: 90%; /* Define a largura */
+  }
+
+  #footer-links {
+    flex-wrap: wrap; /* Faz com que os elementos quebrem para a próxima linha */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  }
+
+  #footer-links {
+    margin-bottom: 10px; /* Define a margem inferior */
+  }
+}

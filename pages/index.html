@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" /> <!-- Definição do conjunto de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Configuração da viewport -->
+    <title>Instagram</title> <!-- Título da página -->
+    <link rel="stylesheet" href="./css/styles.css" /> <!-- Link para o arquivo de estilos CSS local -->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" /> <!-- Ícone da guia/favorito -->
+    <!-- Link para o arquivo CSS do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <div id="main-container">
+            <!-- Container de login e registro -->
+            <div id="form-container">
+                <div id="form-box">
+                    <!-- Logo do Instagram -->
+                    <img id="logo-insta" src="../img/logo_instagram.png" alt="Instagram" />
+                    <div id="info">
+                        <!-- Informações para o registro -->
+                        <span>Regista-te para veres as fotos e os vídeos dos teus amigos.</span>
+                    </div>
+                    <div id="login-facebook">
+                        <!-- Botão de login com Facebook -->
+                        <button>
+                            <span><i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i></span>
+                            Iniciar sessão com o Facebook
+                        </button>
+                    </div>
+                    <div class="separator">
+                        <div class="line"></div> <!-- Linha separadora -->
+                        <span>Ou</span> <!-- Texto de indicação de separação -->
+                    </div>
+                    <form id="login-form">
+                        <!-- Formulário de registro -->
+                        <input type="text" name="username" placeholder="Número de telefone, usuário ou e-mail" />
+                        <!-- Campo de entrada para nome de usuário ou e-mail -->
+                        <input type="text" name="fullname" placeholder="Nome completo" />
+                        <!-- Campo de entrada para nome completo -->
+                        <input type="text" name="name" placeholder="Nome de utilizador" />
+                        <!-- Campo de entrada para nome de usuário -->
+                        <input type="password" name="password" placeholder="Senha" />
+                        <!-- Campo de entrada para senha -->
+                        <div id="info-register">
+                            <!-- Informações adicionais para o registro -->
+                            <p>
+                                <span>As pessoas que usam o nosso serviço podem ter carregado as tuas informações de
+                                    contacto para o Instagram. <a href="#">Saber mais</a>
+                                </span>
+                                <br>
+                                <br>
+                                <span>Com este registo, aceitas os nossos</span> <a href="#">Termos</a><span>, a
+                                </span><a href="#">Política
+                                    de
+                                    Privacidade</a><span> e a</span>
+                                <a href="#">Política de Cookies</a>.
+                                </span>
+                            </p>
+                        </div>
+                        <input type="submit" value="Registrar" /> <!-- Botão de envio para o formulário de registro -->
+                    </form>
+                </div>
+            </div>
+            <div id="register-container">
+                <!-- Container para o link de login -->
+                <p>Tem uma conta? <a href="#">Iniciar sessão.</a></p> <!-- Link para a página de login -->
+            </div>
+            <div id="get-app-container">
+                <!-- Container para download do aplicativo -->
+                <p>Obtenha o aplicativo.</p>
+                <a href="#">
+                    <img src="../img/apple_btn.png" alt="Apple Store" /> <!-- Botão para download na App Store -->
+                </a>
+                <a href="#">
+                    <img src="../img/gplay_btn.png" alt="Google Play" /> <!-- Botão para download no Google Play -->
+                </a>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Rodapé -->
+        <nav>
+            <ul id="footer-links">
+                <!-- Lista de links do rodapé -->
+                <li><a href="#">Meta</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">Privacidade</a></li>
+                <li><a href="#">Termos</a></li>
+                <li><a href="#">Principais Contas</a></li>
+                <li><a href="#">Hashtags</a></li>
+                <li><a href="#">Localização</a></li>
+                <li><a href="#">Instagram Lite</a></li>
+            </ul>
+        </nav>
+        <p id="copyright">&copy;2024 Instagram from Meta</p>
+    </footer>
+</body>
+
+</html>
